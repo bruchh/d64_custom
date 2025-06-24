@@ -1,0 +1,50 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+
+/* Saira */
+@font-face {
+	font-family: "Saira";
+	src: url("./assets/fonts/saira/Saira-VariableFont_wdth\,wght.ttf")
+		format("truetype");
+	font-weight: 200 900;
+}
+
+/* barlow */
+@font-face {
+	font-family: "Barlow"; /* Use a name for referencing */
+	src: url("./assets/fonts/barlow/Barlow-Light.ttf") format("truetype");
+	font-weight: 300; /* Light weight */
+	font-style: normal;
+}
+@font-face {
+	font-family: "Barlow"; /* Use a name for referencing */
+	src: url("./assets/fonts/barlow/Barlow-Regular.ttf") format("truetype");
+	font-weight: 400; /* Regular weight */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Barlow"; /* Use a name for referencing */
+	src: url("./assets/fonts/barlow/Barlow-Medium.ttf") format("truetype");
+	font-weight: 500; /* Medium weight */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Barlow"; /* Use a name for referencing */
+	src: url("./assets/fonts/barlow/Barlow-SemiBold.ttf") format("truetype");
+	font-weight: 600; /* SemiBold weight */
+	font-style: normal;
+}
+
+/* Source Serif Pro */
+@font-face {
+	font-family: "SourceSerifPro"; /* Use a name for referencing */
+	src: url("./assets/fonts/source-serif-pro/SourceSerif4-VariableFont_opsz,wght.ttf")
+		format("truetype");
+	font-weight: 200 900; /* SemiBold weight */
+	font-style: normal;
+}

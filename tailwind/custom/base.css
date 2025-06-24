@@ -1,0 +1,187 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply text-d64blue-900 bg-white font-sans;
+}
+
+/* FORM */
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+textarea,
+select {
+	@apply border-d64gray-100 focus:border-d64blue-500 focus:ring-d64blue-500 my-1 w-full rounded-lg py-2;
+}
+
+.wpcf7-form {
+	@apply flex flex-col !gap-4;
+}
+
+.wpcf7-form label {
+	@apply font-medium;
+}
+
+.wpcf7-form a {
+	@apply underline;
+}
+
+.wpcf7-form input[type="submit"] {
+	@apply hover:bg-d64blue-500 bg-d64blue-900 hover:text-d64blue-900 w-full cursor-pointer rounded-full px-4 py-2 font-bold text-white transition-colors;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+	@apply text-sm;
+}
+
+.wpcf7-form .wpcf7-response-output {
+	@apply !mt-0 !border-d64blue-500 rounded;
+}
+
+.prose .wp-block-button__link {
+	@apply bg-d64blue-900 text-white hover:bg-d64blue-500 hover:text-d64blue-900 transition-colors no-underline hover:underline;
+}
+
+/* EVENTS */
+
+body #event-article h1 {
+	@apply !text-d64blue-900 !mb-2 text-2xl !font-bold sm:text-3xl md:text-4xl lg:text-5xl;
+}
+
+body #event-article p {
+	@apply !text-d64blue-900;
+}
+
+body #event-article .flex #veranstaltung-anmeldung-button {
+	@apply !bg-d64blue-900  rounded-full py-2 font-medium;
+}
+
+body #event-article .flex #veranstaltung-anmeldung-button {
+	@apply !bg-d64blue-900  rounded-full py-2 font-medium;
+}
+
+#event-article .desc h2 {
+	@apply text-d64blue-900 !font-serif !text-2xl !font-medium;
+}
+
+#event-article .desc h3 {
+	@apply text-d64blue-900 !font-serif !text-xl !font-medium;
+}
+
+#event-article .desc h4 {
+	@apply text-d64blue-900 !font-serif !text-lg !font-medium;
+}
+
+#event-article .desc h5 {
+	@apply text-d64blue-900 !font-serif !text-base !font-medium;
+}
+
+.booking .em-booking-form h3 {
+	@apply !text-d64blue-900 !font-serif !text-xl !font-medium;
+}
+
+.booking .em-booking-form label {
+	@apply !text-d64blue-900 !font-sans !text-base !font-medium;
+}
+
+.booking .em-booking-form .em-bs-row-item {
+	@apply !text-d64blue-900 !font-sans !text-base !font-medium;
+}
+
+.booking .em-booking-form .em-bs-row-total {
+	@apply !text-d64blue-900 !font-sans !text-xl !font-bold;
+}
+
+.booking .em-booking-form label input[type="checkbox"] {
+	@apply !-translate-y-[3px];
+}
+
+.booking .em-booking-section input {
+	@apply bg-black;
+}
+
+#events-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+	gap: 24px;
+}
+
+@media (min-width: 620px) {
+	#events-grid {
+		gap: 16px !important;
+	}
+}
+
+.em.pixelbones a {
+	@apply !text-d64blue-900 !font-sans !text-base !font-medium;
+}
+
+.ticket-desc,
+.em-booking-form-details,
+.em-booking-summary {
+	@apply !text-d64blue-900 !font-sans !text-base;
+}
+
+.blockquote {
+	@apply pl-4;
+}
+
+#tribe-events-pg-template {
+	@apply !mx-auto !p-0 max-w-[100vw];
+}
+
+.tribe-events-meta-group {
+	@apply !mr-0 p-0;
+}
+
+.tribe-events-event-meta::before {
+	@apply border-none;
+}
+
+.tribe-events-event-meta dl {
+	@apply !mt-0;
+}
+
+.tribe-tickets__rsvp-wrapper {
+	@apply !rounded-xl !bg-d64blue-50 !font-medium !mx-4;
+}
+
+.event-tickets {
+	@apply !mx-auto;
+}
+
+.tribe-tickets__rsvp {
+	@apply rounded-xl;
+}
+
+.tribe-tickets__rsvp-actions-button-going {
+	@apply !bg-white rounded-full;
+}
+
+.tribe-events-c-subscribe-dropdown__button {
+	@apply !max-w-fit !bg-d64blue-50 rounded-xl flex gap-2 items-center justify-center;
+}
+
+.tribe-events-c-subscribe-dropdown__container {
+	@apply !px-4;
+}
